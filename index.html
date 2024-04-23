@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakayo payroll Calculator</title>
+    <link rel="icon" type="image/x-icon" href="payroll-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
+
+
+</head>
+
+<body style="background-image: url(back.jpg);">
+    
+
+
+
+    <div class="container-fluid" style="position: absolute;left: 45%;">
+
+
+        <img src="payroll-logo.jpg" alt="">
+    </div>
+    <div class="container-fluid" style="position: absolute;;left:30%;">
+        <div class="container-fluid" style="top: 100px;position: relative;">
+
+            <h1>NET PAY CALCULATOR</h1>
+            <p>Enter basic salary and your benefits</p>
+        </div>
+        <div class="container-fluid" style="position: relative;top: 100px;text-align: center;">
+            <div class="content" style="position: relative;">
+            <form id="form">
+                <label for="basic_salary">Basic salary</label>
+                <input type="text" id="basic_salary">
+                <label for="benefits">Benefits</label>
+                <input type="text" id="benefits">
+                <input style="background-color: orange;text-align: center;" type="submit" value="CALCULATE">
+
+            
+            </form>
+            </div>
+            <div class='table' style="top: 20px;position:relative;">
+            <table border="1" style="width: 100%;">
+
+                <tr>
+                    <td>Description</td>
+                    <td>Result</td>
+                </tr>
+                <tr>
+                    <th>Gross Salary</th>
+                    <td id="Gross_salary"></td>
+                </tr>
+                <tr>
+                    <th>NSSF</th>
+                    <th id="NSSF"></th>
+
+                </tr>
+                <tr>
+                    <th>NHDF</th>
+                    <th id="NHDF"></th>
+                </tr>
+                <tr>
+                    <th>Final Payee</th>
+                    <th id="PAYEE"></th>
+                </tr>
+                <tr>
+                    <th>NHIF</th>
+                    <th id="nhif"></th>
+                </tr>
+                <tr>
+                    <th>Taxable Income</th>
+                    <th id="Taxable_income"></th>
+                </tr>
+                <tr>
+                    <th>Net Pay</th>
+                    <th id="net_pay"></th>
+                </tr>
+
+            </table>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js">
+
+    </script>
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> -->
+</body>
+
+
+</html>
